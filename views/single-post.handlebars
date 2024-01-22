@@ -1,0 +1,21 @@
+
+{{> post-info post}}
+
+{{#if loggedIn}}
+<div class="card border border-tertiary rounded-lg single-template">
+    <h3 class="card-header bg-primary text-secondary"></h3>
+    <form class="card-body comment-form" id="comment-form">
+
+        <label class="form-label text-tertiary">Comment</label>
+        <input id="comment" name="comment-body" class="form-input border border-secondary" />
+
+        <button type="submit" class="btn bg-secondary hover:bg-dark text-primary  bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700">Submit</button>
+    </form>
+</div>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}

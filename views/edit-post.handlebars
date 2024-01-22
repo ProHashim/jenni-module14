@@ -1,0 +1,14 @@
+<div class="card border border-tertiary rounded-lg">
+    <h3 class="card-header bg-primary text-secondary">Edit Post</h3>
+    <form class="card-body edit-post-form">
+        <label for="post-title" class="form-label text-tertiary">Title</label>
+        <input name="post-title" type="text" value="{{post.title}}" class="form-input border border-secondary" />
+        <label class="form-label text-tertiary" for="content">Content</label>
+        <input name="content" type="text" value="{{post.content}}" class="form-input border border-secondary" />
+        <button type="submit" class="btn text-white bg-blue-700 hover:bg-dark text-primary">Update Post</button>
+        <button type="button" class="delete-post-btn btn bg-red-700 hover:bg-red-800 hover:bg-dark text-primary">Delete Post</button>
+    </form>
+</div>
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>

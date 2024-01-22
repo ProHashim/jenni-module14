@@ -1,0 +1,23 @@
+<div class="card border border-tertiary rounded-lg bg-blue-50 p-4">
+    <div class="card-header bg-primary p-4">
+        <h4><a href="/post/{{id}}" class="text-secondary hover:underline">{{title}}</a></h4>
+        <p class="text-tertiary">Posted by {{user.username}} on {{format_date created_at}}</p>
+    </div>
+    <div class="card-body p-4">
+        <p class="text-light-dark">{{content}}</p>
+    </div>
+    <a class="read-button " style="max-width: fit-content;" href="/post/{{id}}" id="readmore">
+  Read More
+</a>
+
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var url = window.location.href;
+      if (url.includes("/post/")) {
+        document.getElementById('readmore').style.display = 'none';
+        document.getElementById('hero').style.display = 'none';
+
+      }
+    });
+  </script>
