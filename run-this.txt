@@ -20,3 +20,6 @@ This runs a script (seeds/index.js) to seed data into your application. Make sur
 
 Run the development server:
 npm run dev
+
+
+Make sure you have mysql Workbench installed
