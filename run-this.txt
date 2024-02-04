@@ -1,0 +1,22 @@
+Install server dependencies:
+npm install
+This installs the server dependencies listed in the dependencies section of the package.json file.
+Run tests:
+
+npm test
+This command runs tests using Jest. Make sure you have test files set up in your project.
+Start the server:
+
+npm start
+This starts the server using Node.js and the server.js file.
+Watch for changes using nodemon:
+
+npm run watch
+This uses nodemon to watch for changes in the server files and automatically restarts the server.
+Seed data:
+
+npm run seed
+This runs a script (seeds/index.js) to seed data into your application. Make sure you have the necessary seed data and script set up.
+
+Run the development server:
+npm run dev
